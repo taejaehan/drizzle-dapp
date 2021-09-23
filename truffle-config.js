@@ -8,11 +8,6 @@ module.exports = {
     contracts_build_directory: path.join(__dirname, "app/src/contracts"),
 
     networks: {
-        development: {
-            host: "localhost",
-            port: 7545,
-            network_id: "5777"
-        },
         ropsten :{
             provider : function(){
                 return new HDWalletProvider(mnemonicPhrase, "https://ropsten.infura.io/v3/0d54d1da9d6b485cb3b40df43e4b82ac")
